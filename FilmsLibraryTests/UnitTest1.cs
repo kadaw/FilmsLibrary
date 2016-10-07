@@ -61,6 +61,7 @@ namespace FilmsLibrary
             FilmsRecommendationSystem filmsRecomend = new FilmsRecommendationSystem();
             filmsRecomend.addNewFilm("Gorko 2", "plohoy", "comedy");
             var Rightline = "Title:Gorko 2, Producer:plohoy, Genre:comedy";
+            var Rightlineq = "Title:Gorko 2, Producer:plohoy, Genre:comedy";
             var line = (JsonConvert.SerializeObject(filmsRecomend.filmsList));
             Assert.AreEqual(Rightline, line);
         }

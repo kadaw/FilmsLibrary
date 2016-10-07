@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using System.IO;
 
 namespace FilmsLibrary
 {
@@ -19,6 +20,15 @@ namespace FilmsLibrary
         {
             accountsList.Add(new NewUser(Nickname, Email, Name, Surname));
             string serializedUsers = (JsonConvert.SerializeObject(accountsList));
+
+            userCollection.Add(serializedUsers);
+
+            using (StreamWriter writer = File.CreateText("usersList.txt"))
+            {
+                writer.WriteLineAsync(serializedUsers);
+
+            }
+
         }
         public void addNewFilm(string Title, string Producer, string Genre)
         {
@@ -26,7 +36,14 @@ namespace FilmsLibrary
             string serializedFilms = (JsonConvert.SerializeObject(filmsList));
 
             userCollection.Add(serializedFilms);
-            string serializedFilmsList = (JsonConvert.SerializeObject(userCollection));
+
+            using (StreamWriter writer = File.CreateText("filmsList.txt"))
+            {
+                writer.WriteLineAsync(serializedFilms);
+
+            }
+
+
         }
         public void filmsRatings(double rating)
         {
