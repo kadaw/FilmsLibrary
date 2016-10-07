@@ -60,18 +60,18 @@ namespace FilmsLibrary
         {
             FilmsRecommendationSystem filmsRecomend = new FilmsRecommendationSystem();
             filmsRecomend.addNewFilm("Gorko 2", "plohoy", "comedy");
-            var Rightstroka = "Title:Gorko 2, Producer:plohoy, Genre:comedy";
-            var stroka = (JsonConvert.SerializeObject(filmsRecomend.filmsList));
-            Assert.AreEqual(Rightstroka, stroka);
+            var Rightline = "Title:Gorko 2, Producer:plohoy, Genre:comedy";
+            var line = (JsonConvert.SerializeObject(filmsRecomend.filmsList));
+            Assert.AreEqual(Rightline, line);
         }
         [TestMethod]
         public void addNewUserTestOnRightIndicators_ReturnEqual()
         {
             FilmsRecommendationSystem filmsRecomend = new FilmsRecommendationSystem();
             filmsRecomend.addNewUser("admin", "vvv@gmail.com", "Sasha", "Ivanov");
-            var Rightstroka = "Nickname:admin, Email: vvv@gmail.com, Name:Sasha, Surname:Ivanov";
-            var stroka = (JsonConvert.SerializeObject(filmsRecomend.accountsList));
-            Assert.AreEqual(Rightstroka, stroka);
+            var Rightline = "Nickname:admin, Email: vvv@gmail.com, Name:Sasha, Surname:Ivanov";
+            var line = (JsonConvert.SerializeObject(filmsRecomend.accountsList));
+            Assert.AreEqual(Rightline, line);
         }
 
 
