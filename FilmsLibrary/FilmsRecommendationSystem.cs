@@ -36,13 +36,9 @@ namespace FilmsLibrary
 
         public double filmAverageRating()
         {
-            var sumRating = 0.0;
-            foreach(int x in ratingList)
-            {
-                sumRating = sumRating + x;
-            }
-            double averageRating = sumRating / ratingList.Count;
-            return averageRating;
+          
+            
+            return 0;
 
         }
 
