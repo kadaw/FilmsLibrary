@@ -1,0 +1,7 @@
+c:\users\user\documents\visual studio 2015\Projects\FilmsLibrary\FilmsLibrary\bin\Debug\FilmsLibrary.dll
+c:\users\user\documents\visual studio 2015\Projects\FilmsLibrary\FilmsLibrary\bin\Debug\FilmsLibrary.pdb
+c:\users\user\documents\visual studio 2015\Projects\FilmsLibrary\FilmsLibrary\bin\Debug\Newtonsoft.Json.dll
+c:\users\user\documents\visual studio 2015\Projects\FilmsLibrary\FilmsLibrary\bin\Debug\Newtonsoft.Json.xml
+c:\users\user\documents\visual studio 2015\Projects\FilmsLibrary\FilmsLibrary\obj\Debug\FilmsLibrary.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2015\Projects\FilmsLibrary\FilmsLibrary\obj\Debug\FilmsLibrary.dll
+c:\users\user\documents\visual studio 2015\Projects\FilmsLibrary\FilmsLibrary\obj\Debug\FilmsLibrary.pdb
