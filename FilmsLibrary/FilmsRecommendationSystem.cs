@@ -25,7 +25,7 @@ namespace FilmsLibrary
 
             using (StreamWriter writer = File.CreateText("usersList.txt"))
             {
-                writer.WriteLineAsync(serializedUsers);
+                writer.WriteLine(serializedUsers);
 
             }
 
@@ -39,7 +39,7 @@ namespace FilmsLibrary
 
             using (StreamWriter writer = File.CreateText("filmsList.txt"))
             {
-                writer.WriteLineAsync(serializedFilms);
+                writer.WriteLine(serializedFilms);
 
             }
 
