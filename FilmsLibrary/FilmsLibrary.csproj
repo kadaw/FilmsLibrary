@@ -46,8 +46,15 @@
   <ItemGroup>
     <Compile Include="Film.cs" />
     <Compile Include="FilmsRecommendationSystem.cs" />
+    <Compile Include="IMovieRepository.cs" />
+    <Compile Include="InMemoryUserCache .cs" />
+    <Compile Include="IRepository.cs" />
+    <Compile Include="IUserCache.cs" />
+    <Compile Include="IUserProfile.cs" />
+    <Compile Include="JsonFileRepository.cs" />
     <Compile Include="NewUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserProfile.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

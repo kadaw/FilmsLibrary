@@ -73,6 +73,22 @@ namespace FilmsLibrary
             var line = (JsonConvert.SerializeObject(filmsRecomend.accountsList));
             Assert.AreEqual(Rightline, line);
         }
+       [TestClass]
+       public class InMemoryUserCacheTest
+        {
+            [TestMethod]
+            public void SaveNotNullUserAndGetIt_ItIsReturned()
+            {
+                var userProfile = new UserProfile(1, "qqq");
+                var cache = new InMemoryUserCache();
+
+                cache.SaveUser(userProfile);
+                var retrievedUser = cache.TryGetUser(1);
+
+                Assert.IsNotNull(retrievedUser);
+            }
+        }
+      
 
 
 
